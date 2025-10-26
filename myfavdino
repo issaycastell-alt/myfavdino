@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>You Are My Favourite Dino</title>
+  <style>
+    body {
+      background-color: #fff8ec;
+      font-family: "Poppins", sans-serif;
+      color: #2f3e46;
+      text-align: center;
+      margin: 0;
+      overflow-x: hidden;
+    }
+
+    header {
+      padding: 70px 20px 30px 20px;
+    }
+
+    h1 {
+      font-size: 2.8rem;
+      font-weight: 700;
+      color: #2d6a4f;
+      letter-spacing: 1px;
+      margin-bottom: 20px;
+    }
+
+    .heart {
+      color: #ff6b6b;
+      font-weight: bold;
+    }
+
+    .dino-gallery {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 25px;
+      margin-bottom: 60px;
+    }
+
+    .dino {
+      width: 120px;
+      height: 120px;
+      animation: float 3s ease-in-out infinite;
+      transition: transform 0.3s;
+    }
+
+    .dino:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    footer {
+      background-color: #d8f3dc;
+      color: #2d6a4f;
+      font-weight: 500;
+      padding: 15px 0;
+      border-top: 3px solid #b7e4c7;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YOU ARE MY FAVOURITE DINO</h1>
+  </header>
+
+  <div class="dino-gallery">
+    <img class="dino" src="https://cdn.pixabay.com/photo/2013/07/13/13/39/dinosaur-161744_1280.png" alt="green dino">
+    <img class="dino" src="https://cdn.pixabay.com/photo/2021/05/03/08/53/dinosaur-6224708_1280.png" alt="cute blue dino">
+    <img class="dino" src="https://cdn.pixabay.com/photo/2021/09/22/05/33/dinosaur-6648230_1280.png" alt="orange dino">
+    <img class="dino" src="https://cdn.pixabay.com/photo/2021/07/14/13/43/dinosaur-6465273_1280.png" alt="baby dino">
+    <img class="dino" src="https://cdn.pixabay.com/photo/2022/02/18/15/53/dinosaur-7020630_1280.png" alt="pink dino">
+  </div>
+
+  <footer>
+    made with love by your biggest dino fan 🦖
+  </footer>
+</body>
+</html>
