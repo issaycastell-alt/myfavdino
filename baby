@@ -1,0 +1,120 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>For Issay ❤️</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(to bottom right, #ff9a9e, #fad0c4);
+      color: #fff;
+      text-align: center;
+      overflow-x: hidden;
+    }.container {
+  padding: 60px 20px;
+}
+
+h1 {
+  font-size: 3em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-weight: normal;
+  margin-top: 0;
+  opacity: 0.9;
+}
+
+p {
+  font-size: 1.2em;
+  max-width: 650px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.heart {
+  font-size: 3em;
+  animation: heartbeat 1s infinite;
+  margin: 20px 0;
+}
+
+@keyframes heartbeat {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.btn {
+  background: #fff;
+  color: #ff6f91;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1em;
+  border-radius: 25px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background: #ffe0e9;
+}
+
+.hidden-message {
+  display: none;
+  margin-top: 25px;
+  font-size: 1.3em;
+  animation: fadeIn 1s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+footer {
+  margin-top: 40px;
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+audio {
+  display: none;
+}
+
+  </style>
+</head>
+<body>  <!-- Background Music -->  <audio autoplay loop>
+    <!-- Replace the src below with a valid MP3 file of the song -->
+    <source src="maikees-letter.mp3" type="audio/mpeg">
+  </audio>  <div class="container">
+    <h1>Hi Issay 💖</h1>
+    <h2>From Merill</h2><p>
+  Every moment with you feels like something out of a dream. You make my world softer,
+  brighter, and a whole lot more meaningful. If I had to choose again, it would always be you.
+</p>
+
+<div class="heart">❤️</div>
+
+<h2>Do you love me?</h2>
+
+<button class="btn" onclick="showMessage()">Yes 💘</button>
+<button class="btn" onclick="showMessage()">Yes (obviously) 💞</button>
+
+<p class="hidden-message" id="secret">
+  I knew it. I love you more than anything, Issay. Always and forever. 💖
+</p>
+
+<footer>
+  Made with love by Merill 💌
+</footer>
+
+  </div>  <script>
+    function showMessage() {
+      document.getElementById('secret').style.display = 'block';
+    }
+  </script></body>
+</html>
